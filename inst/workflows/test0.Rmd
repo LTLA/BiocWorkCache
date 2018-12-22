@@ -4,6 +4,10 @@ author: Aaron
 output:
   BiocStyle::html_document:
     toc_float: yes
+vignette: >
+  %\VignetteIndexEntry{My Neighbor Totoro}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
 ---   
 
 ```{r, echo=FALSE}
