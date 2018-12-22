@@ -1,0 +1,49 @@
+---
+title: My Neighbor Totoro 
+author: Aaron
+output:
+  BiocStyle::html_document:
+    toc_float: yes
+---   
+
+```{r, echo=FALSE}
+knitr::opts_chunk$set(error=FALSE, warning=FALSE, message=FALSE)
+```
+
+# Introduction
+
+When talking about Ghibli, you can't go past **My Neighbor Totoro**.
+
+# Method
+
+It's classic slice-of-life with a bit of magic thrown in.
+
+```{r}
+Y <- runif(1000)
+mean(Y)
+```
+
+# Results
+
+The Cat Bus is particularly memorable. 
+Looks pretty comfortable if you don't have motion sickness and aren't allergic to cats.
+
+```{r}
+se <- readRDS(drake::file_in("castle_in_the_sky.rds"))
+se$blob <- runif(ncol(se))
+se
+```
+
+# Discussion
+
+The moral of the story is - offer your umbrella to others, even if they're a bit weird.
+
+```{r}
+saveRDS(se, file=drake::file_out("my_neighbor_totoro.rds"))
+```
+
+# Session information
+
+```{r}
+sessionInfo()
+```

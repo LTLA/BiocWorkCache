@@ -1,0 +1,42 @@
+---
+title: Porco Rosso
+author: Aaron
+output:
+  BiocStyle::html_document:
+    toc_float: yes
+---   
+
+```{r, echo=FALSE}
+knitr::opts_chunk$set(error=FALSE, warning=FALSE, message=FALSE)
+```
+
+# Introduction
+
+I feel that **Porco Rosso** is one of the more underrated Ghibli films.
+
+# Method
+
+I guess maybe that's just because I like airplanes - the soundtrack is also nice.
+
+```{r}
+X <- runif(1000, 0, 1)
+summary(X)
+```
+
+# Results
+
+Most Ghibli films have a young female protagonist^[And yes, Sophie from **Howl's Moving Castle** counts "young".], so it's nice to have a bitter middle-aged man for a change.
+
+```{r}
+hist(X)
+```
+
+# Discussion
+
+The pirate characters were also amusing.
+
+# Session information
+
+```{r}
+sessionInfo()
+```

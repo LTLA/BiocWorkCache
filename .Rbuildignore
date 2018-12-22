@@ -1,0 +1,3 @@
+^vignettes/.*\.rds$
+^vignettes/.*\.md$
+^vignettes/.*_files$

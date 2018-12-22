@@ -1,0 +1,49 @@
+---
+title: Castle in the Sky 
+author: Aaron
+output:
+  BiocStyle::html_document:
+    toc_float: yes
+---   
+
+```{r, echo=FALSE}
+knitr::opts_chunk$set(error=FALSE, warning=FALSE, message=FALSE)
+```
+
+# Introduction
+
+One of my favorite movies of all time is **Castle in the Sky**.
+
+# Method
+
+I'm a big sucker for airships and floating stuff, and the soundtrack is stellar.
+
+```{r}
+X <- rnorm(1000)
+summary(X)
+```
+
+# Results
+
+Did you know that the bad guy was voiced by Mark Hamill in the English dub?
+
+```{r}
+library(SummarizedExperiment)
+se <- SummarizedExperiment(list(counts=matrix(runif(1000), ncol=10)))
+se$blah <- sample(LETTERS, ncol(se))
+se
+```
+
+# Discussion
+
+I actually have a **Castle in the Sky** T-shirt, though it's subtle enough that most people don't get the reference.
+
+```{r}
+saveRDS(se, file=drake::file_out("castle_in_the_sky.rds"))
+```
+
+# Session information
+
+```{r}
+sessionInfo()
+```

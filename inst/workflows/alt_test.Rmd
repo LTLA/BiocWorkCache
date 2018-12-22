@@ -1,0 +1,44 @@
+---
+title: Grave of the Fireflies 
+author: Aaron
+output:
+  BiocStyle::html_document:
+    toc_float: yes
+---   
+
+```{r, echo=FALSE}
+knitr::opts_chunk$set(error=FALSE, warning=FALSE, message=FALSE)
+```
+
+# Introduction
+
+**Grave of the Fireflies** is definitely one to keep on the shelf.
+
+# Method
+
+It is an excellent movie but not something to watch for casual entertainment.
+
+```{r}
+Z <- rgamma(1000, 1,1)
+summary(Z)
+```
+
+# Results
+
+It doesn't help that you know it's going to end badly at the start of the movie.
+
+```{r}
+library(SummarizedExperiment)
+se <- readRDS(file=file_in("castle_in_the_sky.rds"))
+se
+```
+
+# Discussion
+
+In that respect, it is much like **In This Corner of the World**, another one of those emotionally awkward movies.
+
+# Session information
+
+```{r}
+sessionInfo()
+```
