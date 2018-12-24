@@ -23,7 +23,7 @@ BiocWorkCache:::.compiler("test1")
 When talking about Ghibli, you can't go past **My Neighbor Totoro**.
 
 ```{r}
-readLines("~/chipseq.log")
+readLines("chipseq.log")
 ```
 
 # Method

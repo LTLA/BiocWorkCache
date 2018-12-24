@@ -23,7 +23,7 @@ BiocWorkCache:::.compiler("test1")
 **Grave of the Fireflies** is definitely one to keep on the shelf.
 
 ```{r}
-readLines("~/chipseq.log")
+readLines("chipseq.log")
 ```
 
 # Method

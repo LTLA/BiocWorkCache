@@ -19,8 +19,8 @@ knitr::opts_chunk$set(error=FALSE, warning=FALSE, message=FALSE, cache=TRUE)
 One of my favorite movies of all time is **Castle in the Sky**.
 
 ```{r}
-write(file="~/chipseq.log", as.character(Sys.time()), append=TRUE)
-readLines("~/chipseq.log")
+write(file="chipseq.log", paste(as.character(Sys.time()), runif(1)), append=TRUE)
+readLines("chipseq.log")
 ```
 
 # Method
