@@ -10,7 +10,7 @@ vignette: >
   %\VignetteEncoding{UTF-8}
 ---   
 
-```{r, echo=FALSE}
+```{r, echo=FALSE, cache=FALSE}
 knitr::opts_chunk$set(error=FALSE, warning=FALSE, message=FALSE, cache=TRUE)
 ```
 
@@ -18,11 +18,16 @@ knitr::opts_chunk$set(error=FALSE, warning=FALSE, message=FALSE, cache=TRUE)
 
 One of my favorite movies of all time is **Castle in the Sky**.
 
+```{r}
+write(file="~/chipseq.log", as.character(Sys.time()), append=TRUE)
+readLines("~/chipseq.log")
+```
+
 # Method
 
 I'm a big sucker for airships and floating stuff, and the soundtrack is stellar.
 
-```{r}
+```{r, cached=TRUE}
 X <- rnorm(1000)
 summary(X)
 ```

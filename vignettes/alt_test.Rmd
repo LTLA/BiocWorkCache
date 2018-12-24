@@ -10,17 +10,21 @@ vignette: >
   %\VignetteEncoding{UTF-8}
 ---   
 
-```{r, echo=FALSE}
+```{r, cache=FALSE, echo=FALSE}
 knitr::opts_chunk$set(error=FALSE, warning=FALSE, message=FALSE, cache=TRUE)
 ```
 
-```{r, cache=FALSE}
+```{r, cache=FALSE, echo=FALSE, results="hide"}
 BiocWorkCache:::.compiler("test1")
 ```
 
 # Introduction
 
 **Grave of the Fireflies** is definitely one to keep on the shelf.
+
+```{r}
+readLines("~/chipseq.log")
+```
 
 # Method
 

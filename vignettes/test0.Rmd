@@ -10,18 +10,21 @@ vignette: >
   %\VignetteEncoding{UTF-8}
 ---   
 
-```{r, echo=FALSE}
+```{r, cache=FALSE, echo=FALSE}
 knitr::opts_chunk$set(error=FALSE, warning=FALSE, message=FALSE, cache=TRUE)
 ```
 
-
-```{r, cache=FALSE}
+```{r, cache=FALSE, echo=FALSE, results="hide"}
 BiocWorkCache:::.compiler("test1")
 ```
 
 # Introduction
 
 When talking about Ghibli, you can't go past **My Neighbor Totoro**.
+
+```{r}
+readLines("~/chipseq.log")
+```
 
 # Method
 
