@@ -5,8 +5,7 @@ Date: 2018-12-23
 Authors@R: person(role=c("aut","cre"), "Aaron", "Lun", email = "infinite.monkeys.with.keyboards@gmail.com")
 Description: Testing the use of caching for compiling inter-dependent Bioconductor workflows.
 Depends: SummarizedExperiment
-Imports: rmarkdown
-Suggests: knitr
+Suggests: knitr, rmarkdown
 License: Artistic-2.0
 biocViews: Workflow, EpigeneticsWorkflow
 VignetteBuilder: knitr
