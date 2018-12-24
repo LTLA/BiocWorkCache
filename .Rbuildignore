@@ -1,3 +1,4 @@
 ^vignettes/.*\.rds$
 ^vignettes/.*\.md$
 ^vignettes/.*_files$
+^vignettes/.*_cache$
