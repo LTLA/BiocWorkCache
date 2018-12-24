@@ -11,7 +11,7 @@ vignette: >
 ---   
 
 ```{r, echo=FALSE}
-knitr::opts_chunk$set(error=FALSE, warning=FALSE, message=FALSE)
+knitr::opts_chunk$set(error=FALSE, warning=FALSE, message=FALSE, cache=TRUE)
 ```
 
 # Introduction
@@ -43,7 +43,7 @@ se
 I actually have a **Castle in the Sky** T-shirt, though it's subtle enough that most people don't get the reference.
 
 ```{r}
-saveRDS(se, file=drake::file_out("castle_in_the_sky.rds"))
+saveRDS(se, file="castle_in_the_sky.rds")
 ```
 
 # Session information

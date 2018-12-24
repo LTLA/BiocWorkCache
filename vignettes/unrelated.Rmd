@@ -11,7 +11,7 @@ vignette: >
 ---   
 
 ```{r, echo=FALSE}
-knitr::opts_chunk$set(error=FALSE, warning=FALSE, message=FALSE)
+knitr::opts_chunk$set(error=FALSE, warning=FALSE, message=FALSE, cache=TRUE)
 ```
 
 # Introduction
